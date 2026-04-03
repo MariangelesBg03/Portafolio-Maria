@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María de los Ángeles | Portafolio Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-layout">
+        
+      <header class="hero-container">
+            <div class="window-frame">
+                <div class="profile-wrapper">
+                    <div class="bg-layer" style="background-image: url('img/fondo1.jpg');"></div>
+                    <img src="img/foto1.jpg" alt="María de los Ángeles" class="profile-img">
+                </div>
+                
+                <nav class="window-tabs">
+                    <span class="tab active" data-i18n="nav-home">Inicio</span>
+                    <span class="tab" data-i18n="nav-about">Sobre mí</span>
+                    <a href="cv maria_bencomo2026.pdf" download class="tab" data-i18n="nav-cv-es">CV Español</a>
+                    <a href="cv maria_bencomo2026_en.pdf" download class="tab" data-i18n="nav-cv-en">CV Inglés</a>
+                    <span class="tab" id="btn-translation">English</span>
+                    <span class="tab" id="btn-mode"> Modo🌙</span>
+                </nav>
+            </div>
+    
+            <div class="hero-content">
+                <h1 data-i18n="hero-title">María de los Ángeles</h1>
+                <div class="badges">
+                    <span class="badge" data-i18n="badge-1">Estudiante de Ingeniería de Sistemas</span>
+                    <span class="badge" data-i18n="badge-2">Técnico Superior en Administración</span>
+                    <span class="badge" data-i18n="badge-3">Frontend Developer Jr</span>
+                </div>
+                <p class="description" data-i18n="hero-description">
+                         <strong>Futura Ingeniera de Sistemas y Técnico Superior en Administración</strong> con enfoque híbrido en desarrollo de software y gestión técnica. Apasionada por la arquitectura web semántica, administración avanzada de redes IPv4/IPv6 y la investigación académica. Experta en transformar procesos complejos en soluciones lógicas, escalables y eficientes, con habilidades en redacción técnica de alto impacto.
+                     </p>
+            </div>
+        </header>
+
+        <main class="bento-grid">
+            
+            <section class="bento-item item-main">
+                <div class="about-text">
+                    <h2 data-i18n="bento-about-title">Sobre mi...</h2>
+                    <p data-i18n="bento-about-text">Futura Ingeniera de Sistemas con un enfoque de alto rigor en la arquitectura de información. Mi valor diferencial reside en la capacidad de transformar procesos abstractos en documentación técnica de alta precisión (reportes de 20+ páginas con análisis FODA y metodológico) y lógica estructurada en Python. Soy una redactora académica técnica que une la disciplina administrativa con la armonía musical, garantizando que cada solución sea tan estética como eficiente.</p>
+                </div>
+            </section>
+
+            <section class="bento-item item-skills">
+                <img src="img/foto2.jpg" alt="Decorativa" class="skills-img">
+            </section>
+
+            <section class="bento-item item-skills">
+                <img src="img/foto5.jpg" alt="Decorativa" class="skills-img">
+            </section>
+
+            <section class="bento-item" style="grid-column: span 1; aspect-ratio: 1/1;">
+                <h3 style="margin-bottom: 0.5rem;"></h3>
+                <h5 data-i18n="bento-skill1-title">Ingeniería de Software</h5>
+                <p style="font-size:0.85rem;" data-i18n="bento-skill1-text">Desarrollo basado en <strong>POO</strong> y manipulación dinámica del <strong>DOM</strong>. Experta en el manejo de estructuras de datos complejas (diccionarios, bibliotecas) y lógica algorítmica aplicada para la automatización de procesos técnicos escalables.</p>
+            </section>
+
+            <section class="bento-item" style="grid-column: span 1; aspect-ratio: 1/1;">
+                <h3 style="margin-bottom: 0.5rem;"></h3>
+                <h5 data-i18n="bento-skill2-title">Gestión Estratégica</h5>
+                <p style="font-size:0.85rem;" data-i18n="bento-skill2-text">Especialista en <strong>optimización de flujos directivos</strong> y auditoría administrativa. Capacidad avanzada para la toma de decisiones bajo presión, gestión de recursos críticos y reingeniería de procesos para maximizar la eficiencia operativa organizacional.</p>
+            </section>
+
+            <section class="bento-item item-skills">
+                <img src="img/foto5.jpg" alt="Imagen Decorativa" class="skills-img">
+            </section>
+
+            <section class="bento-item item-small" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                 <h5 style="margin-bottom: 0.5rem; font-weight: 600;" data-i18n="bento-voice-title">Voz & Partituras</h5>
+                 <p data-i18n="bento-voice-text">La disciplina del canto aplicada a la armonía y ritmo del <strong>Clean Code</strong>.</p>
+            </section>
+
+            <section class="bento-item item-small">
+                <!-- Espacio liberado tras mudar el Tarot -->
+            </section>
+
+        </main>
+
+        <!-- --- 2DA PARTE: CARRUSEL 3D STACKED --- -->
+        <section id="certificados-pro" style="padding: 50px 0; perspective: 1200px; overflow: hidden;">
+            <h2 class="section-title">Certificaciones y Logros</h2>
+            <div class="cert-stack">
+                <!-- Los 9 certificados en pila 3D -->
+                <div class="cert-card"><img src="img/certificado1.png" alt="Certificado 1"></div>
+                <div class="cert-card"><img src="img/certificado2.png" alt="Certificado 2"></div>
+                <div class="cert-card"><img src="img/certificado3.png" alt="Certificado 3"></div>
+                <div class="cert-card"><img src="img/certificado4.png" alt="Certificado 4"></div>
+                <div class="cert-card"><img src="img/certificado5.png" alt="Certificado 5"></div>
+                <div class="cert-card"><img src="img/certificado6.png" alt="Certificado 6"></div>
+                <div class="cert-card"><img src="img/certificado7.png" alt="Certificado 7"></div>
+                <div class="cert-card"><img src="img/certificado8.png" alt="Certificado 8"></div>
+                <div class="cert-card"><img src="img/certificado9.png" alt="Certificado 9"></div>
+                <div class="cert-card"><img src="img/certificado10.png" alt="Certificado 10"></div>
+            </div>
+        </section>
+
+        <!-- --- 2DA PARTE: ESENCIA PERSONAL --- -->
+        <section id="personal-essence">
+            <div class="essence-block essence-left">
+                <div></div> <!-- Espacio para imagen: Arriba Izquierda -->
+                <h3 data-i18n="essence-left-title">Más allá de la Ingeniería</h3>
+                <p data-i18n="essence-left-text">Mi trayectoria no se limita a los sistemas; poseo una sólida base en <strong>atención al cliente de alto nivel</strong> y <strong>docencia</strong>. Esta faceta ha forjado mi lado más comunicativo y empático, permitiéndome traducir necesidades humanas complejas en requerimientos técnicos claros y soluciones que realmente conectan con el usuario.</p>
+                <div></div> <!-- Espacio para imagen: Esquina inferior derecha (Bocado) -->
+            </div>
+            <div class="essence-block essence-right">
+                <div></div> <!-- Espacio para imagen: Arriba Izquierda -->
+                <h3 data-i18n="essence-right-title">Vibración & Arcanos</h3>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <p style="flex: 1;" data-i18n="essence-right-text">La armonía que encuentro en el <strong>canto y las partituras</strong> fluye en paralelo con la simbología del <strong>tarot</strong>. Para mí, la música y los arcanos son herramientas de intuición y enfoque que agudizan mi capacidad de análisis, permitiéndome abordar la arquitectura de software con una sensibilidad única y una lógica equilibrada.</p>
+                    
+                    <div class="tarot-wrapper" style="flex: 0 0 auto;">
+                        <div class="tarot-card" id="tarotCard" style="width: 100px; height: 160px; margin: 0;">
+                            <div class="card-front">
+                                <img src="tarot/img/carta1.png" class="front-img">
+                                <div style="font-size: 0.7rem; padding: 5px; position: relative; z-index: 2; color: white; text-align: center;" data-i18n="tarot-prompt">Haz clic...</div>
+                            </div>
+                            <div class="card-back">
+                                <img src="tarot/img/carta2.png" class="back-img">
+                                <div id="fortuneText" style="font-size: 0.7rem; padding: 5px; position: relative; z-index: 2; color: white; text-align: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- 3RA PARTE: TECH SOLAR SYSTEM --- -->
+        <section id="tech-solar-system">
+            <div class="sun" data-i18n="solar-system-title">Tecnologías Core</div>
+            
+            <div class="orbit inner-orbit">
+                <div class="icon-wrapper html-pos"><img src="img/logos/html5.png" alt="HTML5"></div>
+                <div class="icon-wrapper css-pos"><img src="img/logos/css3.png" alt="CSS3"></div>
+            </div>
+
+            <div class="orbit outer-orbit">
+                <div class="icon-wrapper js-pos"><img src="img/logos/jsvanilla.png" alt="JS"></div>
+                <div class="icon-wrapper py-pos"><img src="img/logos/pyton.png" alt="Python"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
